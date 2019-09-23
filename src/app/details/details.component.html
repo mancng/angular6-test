@@ -1,0 +1,9 @@
+<div *ngIf="user$">
+  <h1>{{ user$.data.first_name }} {{  user$.data.last_name }}</h1>
+  
+  <ul>
+    <li><strong>Username: </strong>{{ user$.data.first_name }} {{ user$.data.last_name }}</li>
+    <li><strong>Email: </strong>{{ user$.data.email }}</li>
+    <li><strong>Avatar: </strong><a href="{{ user$.data.avatar }}">{{ user$.data.avatar }}</a> </li>
+  </ul>
+</div>
